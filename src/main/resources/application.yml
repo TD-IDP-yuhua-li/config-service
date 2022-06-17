@@ -7,4 +7,12 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/TD-IDP-yuhua-li/config-service.git
+          search-paths:
+            - "config-service"
+          force-pull: true
+      label: main
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6060/eureka
