@@ -9,7 +9,7 @@ spring:
         git:
           uri: https://github.com/TD-IDP-yuhua-li/config-service.git
           search-paths:
-            - "config-service"
+            - "config"
           force-pull: true
       label: main
 eureka:
