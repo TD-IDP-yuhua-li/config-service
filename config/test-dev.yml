@@ -1,3 +1,42 @@
-config:
-  info: "config-server"
-  version: "2.0.0"
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    url: jdbc:mysql://localhost:3308/product?createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password
+  flyway:
+    baseline-on-migrate: true
+  mail:
+    host: smtp.qq.com
+    username: 872584173@qq.com
+    password: nejdukgtpmfdbaia
+  application:
+    name: product-service
+eureka:
+  instance:
+    hostname: product-service
+  service-url:
+    register-with-eureka: true
+    fetch-registry: true
+    defaultZone: http://localhost:6060/eureka
+token:
+  key: 79r2ZMxzfrFxYD1
+  time: 1800000
+image:
+  location: src/main/resources/static/img
+thumbnail:
+  location: src/main/resources/static/thumbnail
