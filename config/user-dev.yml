@@ -1,0 +1,32 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://localhost:3308/user?createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password
+  flyway:
+    baseline-on-migrate: true
+  mail:
+    host: smtp.qq.com
+    username: 872584173@qq.com
+    password: nejdukgtpmfdbaia
+mail:
+  seed: 1234567890qwertyuiopasdfghjklzxcvbnm
+  address: 872584173@qq.com
+  title: "System verification code"
+  body: "Dear user,your email verification code is: "
+token:
+  key: 79r2ZMxzfrFxYD1
+  time: 1800000
+password:
+  key: 56r2ZMxufrFxYD13
+  algorithms: AES/CBC/PKCS5PADDING
