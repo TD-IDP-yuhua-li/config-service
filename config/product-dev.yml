@@ -1,5 +1,3 @@
-server:
-  port: 8080
 spring:
   mvc:
     pathmatch:
@@ -26,16 +24,6 @@ spring:
     host: smtp.qq.com
     username: 872584173@qq.com
     password: nejdukgtpmfdbaia
-  application:
-    name: product-service
-eureka:
-  instance:
-    hostname: product-service
-  client:
-    service-url:
-      register-with-eureka: true
-      fetch-registry: true
-      defaultZone: http://localhost:6060/eureka
 token:
   key: 79r2ZMxzfrFxYD1
   time: 1800000
