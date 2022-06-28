@@ -1,3 +1,5 @@
+server:
+  port: 8080
 spring:
   mvc:
     pathmatch:
@@ -29,10 +31,11 @@ spring:
 eureka:
   instance:
     hostname: product-service
-  service-url:
-    register-with-eureka: true
-    fetch-registry: true
-    defaultZone: http://localhost:6060/eureka
+  client:
+    service-url:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://localhost:6060/eureka
 token:
   key: 79r2ZMxzfrFxYD1
   time: 1800000
@@ -40,3 +43,4 @@ image:
   location: src/main/resources/static/img
 thumbnail:
   location: src/main/resources/static/thumbnail
+
