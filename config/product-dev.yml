@@ -31,4 +31,11 @@ image:
   location: src/main/resources/static/img
 thumbnail:
   location: src/main/resources/static/thumbnail
+mail:
+  buy:
+    title: "Hey %s, some one can SELL the product which you just want!"
+    body: "%s can sell this product: %s, contact this seller directly! Seller email: %s."
+  sell:
+    title: "Hey %s, some one want to BUY your product!"
+    body: "%s want to buy your product: %s, contact this buyer directly! Buyer email: %s."
 
