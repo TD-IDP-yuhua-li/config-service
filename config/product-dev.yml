@@ -1,3 +1,7 @@
+# 一般文件的命名以 xx-{PROFILE}.yml
+# PROFILE 一般会在程序启动的时候加上，不需要在 application.yml 里面写死（看product/user 里面写死的）
+# 不设置 PROFILE 直接启动, PROFILE 是 default，对应 xx-default.yml /application.yml
+
 spring:
   mvc:
     pathmatch:
